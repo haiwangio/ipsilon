@@ -5,7 +5,6 @@ Version:    2.1.0
 Release:    1%{?builddate}%{?gittag}%{?dist}
 Summary:    An Identity Provider Server
 
-%define _binaries_in_noarch_packages_terminate_build   0
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -23,7 +22,6 @@ BuildRequires:  m2crypto
 Requires:       python-setuptools
 Requires:       python-requests
 Requires:       %{name}-base = %{version}-%{release}
-BuildArch:      noarch
 
 %description
 Ipsilon is a multi-protocol Identity Provider service. Its function is to
